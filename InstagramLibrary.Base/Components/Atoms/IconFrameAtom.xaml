@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:atoms="clr-namespace:InstagramLibrary.Base.Components.Atoms"
+             x:Class="InstagramLibrary.Base.Components.Atoms.IconFrameAtom"
+             x:Name="iconFrame"
+             SizeChanged="ContentView_SizeChanged">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="LogoGradientColor"
+                                 StartPoint="0,0"
+                                 EndPoint="1,1">
+                <GradientStop Color="#405de6"
+                              Offset=".10" />
+                <GradientStop Color="#5b51d8"
+                              Offset=".20" />
+                <GradientStop Color="#833ab4"
+                              Offset=".30" />
+                <GradientStop Color="#c13584"
+                              Offset=".40" />
+                <GradientStop Color="#e1306c"
+                              Offset=".50" />
+                <GradientStop Color="#fd1d1d"
+                              Offset=".60" />
+                <GradientStop Color="#f56040"
+                              Offset=".70" />
+                <GradientStop Color="#f77737"
+                              Offset=".80" />
+                <GradientStop Color="#fcaf45"
+                              Offset=".90" />
+                <GradientStop Color="#ffdc80"
+                              Offset="1" />
+            </LinearGradientBrush>
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <Frame x:Name="mainFrame"
+               Padding="0"
+               VerticalOptions="Fill"
+               HorizontalOptions="Fill"
+               CornerRadius="100"
+               Background="{StaticResource LogoGradientColor}"
+               >
+            <atoms:CircularImageAtom x:Name="a" Margin="10"
+                                     ImageSource="https://cdn-icons-png.flaticon.com/512/87/87390.png" />
+        </Frame>
+    </ContentView.Content>
+</ContentView>

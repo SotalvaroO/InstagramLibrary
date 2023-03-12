@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:atoms="clr-namespace:InstagramLibrary.Base.Components.Atoms;assembly=InstagramLibrary.Base"
+             x:Class="AppTest.MainPage">
+    <StackLayout>
+        <Label Text="hola" />
+        <atoms:CircularImageAtom x:Name="img" ImageSource="https://thumbs.dreamstime.com/b/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714.jpg"></atoms:CircularImageAtom>
+        <atoms:IconFrameAtom x:Name="frm" VerticalOptions="FillAndExpand"></atoms:IconFrameAtom>
+    </StackLayout>
+</ContentPage>
